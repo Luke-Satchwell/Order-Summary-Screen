@@ -1,0 +1,165 @@
+:root {
+  /* ### Primary */
+  --Pale-blue: hsl(225, 100%, 94%);
+  --Bright-blue: hsl(245, 75%, 52%);
+  /* ### Neutral */
+  --Very-pale-blue: blue, ;
+  --Desaturated-blue:
+    --Dark-blue: hsl(223, 47%, 23%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(224, 23%, 55%);
+  font-family: 'Red Hat Display', sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  text-align: center;
+}
+
+.card-container {
+  max-width: 350px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 1rem;
+  margin: 3rem 2rem;
+}
+
+.card img {
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  width: 100%;
+}
+
+/* main text section */
+.text h1 {
+  font-size: 1.2rem;
+  font-weight: 900;
+  padding-bottom: 5%;
+}
+
+.text p {
+  padding: 0 1.2rem;
+}
+
+/* pricing plan section */
+.plan-container {
+  background-color: hsl(225, 100%, 98%);
+  border-radius: 10%;
+  width: 85%;
+  margin: 1.5rem auto;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 5%;
+}
+
+.column img {
+  max-width: 2rem;
+  max-height: 50%;
+}
+
+.column h2 {
+  font-size: 1rem;
+  font-weight: 900;
+}
+
+.column a {
+  font-size: 0.8rem;
+  margin: 0 auto;
+}
+
+.column a:hover {
+  cursor: pointer;
+}
+
+/* Confitmation section */
+.btn {
+  -webkit-border-radius: 7;
+  -moz-border-radius: 7;
+  border-radius: 7px;
+  color: #ffffff;
+  font-size: 15px;
+  background: hsl(245, 75%, 52%);
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #3cb0fd;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.cancel {
+  padding-top: 5%;
+  padding-bottom: 7%;
+}
+
+.cancel a {
+  color: #333;
+  font-size: 1rem;
+  text-decoration: none;
+}
+
+.cancel a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  font-size: 0.8rem;
+}
+
+
+@media screen and (min-width: 750px) {
+  body{
+    background-image: url(../images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: lighten;
+  }
+
+  .card-container{
+    max-width: 500px;
+    position: relative;
+    top: 20rem;
+    z-index: 99;
+  }
+
+  .text h1{
+    font-size: 2rem;
+    padding-top: 1.25rem;
+    margin: 0 auto;
+  }
+  .text p{
+    padding: 0 2.5rem;
+    margin: 0 auto;
+  }
+  .plan-container{
+    width: 80%;
+  }
+
+  .btn{
+    width: 80%;
+  }
+
+  footer{
+    position: absolute;
+    left: 0;
+    bottom: 2rem;
+    right: 0;
+  }
+}
